@@ -1,6 +1,7 @@
 package org.functionalprog.imperative;
 
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import static org.functionalprog.imperative.Runner.Gender.FEMALE;
@@ -40,6 +41,15 @@ public class Runner {
                 .filter(person -> FEMALE.equals(person.gender))
                 .collect(Collectors.toList());
         females2.forEach(System.out::println);
+
+        // Quick way of using a Predicate
+        System.out.println("// Declarative Approach with Predicate");
+        Predicate<Person> personPredicate = person -> FEMALE.equals(person.gender);
+
+        List<Person> females3 = people.stream()
+                .filter(personPredicate)
+                .collect(Collectors.toList());
+        females3.forEach(System.out::println);
     }
 
     static class Person {
