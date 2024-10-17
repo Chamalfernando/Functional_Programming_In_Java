@@ -1,4 +1,4 @@
-package org.foodstore;
+package org.functionalprog;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

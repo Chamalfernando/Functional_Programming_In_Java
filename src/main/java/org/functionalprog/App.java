@@ -1,4 +1,4 @@
-package org.foodstore;
+package org.functionalprog;
 
 /**
  * Hello world!
