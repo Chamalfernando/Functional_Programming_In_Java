@@ -19,6 +19,8 @@ public class Runner {
                 new Person("Alice", FEMALE)
         );
 
+
+
         System.out.println("// Imperative Approach");
         // Imperative Approach
         List<Person> females = new java.util.ArrayList<>(); // <1>
