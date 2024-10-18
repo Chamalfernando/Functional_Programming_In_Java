@@ -1,0 +1,11 @@
+Pure Functional Programming has a set of rules to follow.
+
+1). No State
+
+2). Pure Functions - these don't depend on global state. Those should self contained.
+
+3). No Side Effects - No side effects other than everything inside the body of your function.
+
+4). Higher Order Functions
+----- The function takes one or more functions as parameters.
+----- The function returns another function as result.(refer to callbacks,combinator patter)
